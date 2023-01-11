@@ -43,11 +43,11 @@ jobs:
       - restore_cache:
           keys: [frontend-build]
       - run:
-        name: test-frontend
-        command: |
-          cd frontend
-          npm install
-          npm run test
+          name: test-frontend
+          command: |
+            cd frontend
+            npm install
+            npm run test
 
 workflows:
   default:
